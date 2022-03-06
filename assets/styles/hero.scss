@@ -1,0 +1,37 @@
+@use './mixins.scss' as m;
+
+.hero {
+    padding: 15em 13em 15em 12em;
+}
+
+.hero-header {
+    display: flex;
+    flex-wrap: nowrap;
+    img {
+        border-radius: 50%;
+        max-width: 100%;
+        width: auto\9;
+        height: auto;
+    }
+}
+
+.hero-title {
+    padding-bottom: 0.25em;
+    word-wrap: break-word;
+}
+
+.hero-text {
+    padding: 0 1em;
+}
+
+@media only screen and (max-width: 1507px) {
+    .hero-header {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        margin: 0;
+    }
+}

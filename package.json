@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-2022",
+  "version": "1.0.0",
+  "description": "personal site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./assets/styles/main.scss ./assets/styles/app.css"
+  },
+  "author": "Eric Warshawsky",
+  "license": "ISC"
+}
