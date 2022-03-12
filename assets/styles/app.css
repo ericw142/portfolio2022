@@ -93,9 +93,10 @@ a {
 .project-card {
   display: flex;
   flex-direction: column;
+  padding: 0.5em;
 }
 .project-card img {
-  max-height: 350px;
+  max-height: 450px;
   width: auto;
 }
 
@@ -110,6 +111,19 @@ main {
 .row {
   display: flex;
   flex-direction: row;
+  gap: 1;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-10 {
+  margin-top: 10em;
 }
 
 .reveal {

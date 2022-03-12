@@ -11,8 +11,9 @@
 .project-card {
     display: flex;
     flex-direction: column;
+    padding: 0.5em;
     img {
-        max-height: 350px;
+        max-height: 450px;
         width: auto;
     }
 }
