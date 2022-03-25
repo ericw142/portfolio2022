@@ -6,6 +6,24 @@ main {
     padding-bottom: 1em;
 }
 
+a,
+.link {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: var(--fw-700);
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+    color: hsla(245, 83%, 68%, 1);
+    text-decoration: none;
+}
+
 .d-none {
     display: none;
 }
@@ -13,7 +31,21 @@ main {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.grid-flow {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.m-1 {
+    margin: 1em;
 }
 
 .mt-1 {
@@ -64,4 +96,5 @@ footer {
     padding-top: 0.1em;
     text-decoration: none;
     background-color: transparent;
+    color: hsla(245, 83%, 68%, 1);
 }

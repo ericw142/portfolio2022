@@ -94,14 +94,36 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0.5em;
+  justify-content: center;
+  max-width: 450px;
+  border: 1px solid #7281a7;
+  border-radius: 1%;
 }
 .project-card img {
-  max-height: 450px;
-  width: auto;
+  width: 450px;
+  height: auto;
 }
 
 main {
   padding-bottom: 1em;
+}
+
+a,
+.link {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: #3829e0;
+  text-decoration: underline;
+  font-weight: var(--fw-700);
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #756af1;
+  text-decoration: none;
 }
 
 .d-none {
@@ -111,7 +133,21 @@ main {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 1;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.grid-flow {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.m-1 {
+  margin: 1em;
 }
 
 .mt-1 {
@@ -163,6 +199,7 @@ footer {
   padding-top: 0.1em;
   text-decoration: none;
   background-color: transparent;
+  color: #756af1;
 }
 
 /*# sourceMappingURL=app.css.map */
